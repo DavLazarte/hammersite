@@ -7,6 +7,10 @@ body{
     color: white;
     font-family: "Big Noodle Titling";
 }
+body a {
+    text-decoration: none;
+    color: orange;
+}
 
 nav {
     border-bottom:3px solid orange;
@@ -38,6 +42,12 @@ nav {
     padding: 20px;
     font-weight: 500;
 }
+.list-group li a.active {
+    color: orange !important;
+}
+.list-group li a:hover {
+    color: orange !important;
+}
 
 .box-title {
     color: orange;
@@ -56,4 +66,24 @@ nav {
     background-color: orange;
     color: white;
     border: black solid;
+}
+.home {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+.img-home{
+    border:solid orange;
+    border-radius: 10px;
+}
+
+.text-home {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.text-home p {
+    font-size: 20px;
 }
