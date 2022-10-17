@@ -2,8 +2,16 @@
     font-family: "Big Noodle Titling";
     src: url("../fonts/big_noodle_titling.ttf");
 }
+@font-face {
+    font-family: "Messina Regular";
+    src: url("../fonts/MessinaSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Messina Black";
+    src: url("../fonts/MessinaSans-Black.ttf");
+}
 body{
-    background-color: black;
+    background-color: #FA8403;
     color: white;
     font-family: "Big Noodle Titling";
 }
@@ -11,10 +19,18 @@ body a {
     text-decoration: none;
     color: orange;
 }
-
+.caja {
+    background: #000000 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #0000006E;
+    opacity: 1;
+    border-radius: 30px !important;
+    max-width: 80%;
+}
+/* 
 nav {
     border-bottom:3px solid orange;
-}
+    padding: 0px !important;
+} */
 
 .btn-clasefree {
     display: flex;
@@ -33,7 +49,7 @@ nav {
 }
 
 .welcome-box{
-    background-color: white;
+    background-color: #FA8403;
     display: flex;
     margin: 0px;
     text-align: center;
@@ -54,14 +70,25 @@ nav {
     font-size: 30px;
 }
 .box-text {
-    color: white;
-    font-size: 18px;
+    font-family: "Messina Regular";
+    /* font: normal normal normal 10px/12px; */
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 .item-box{
+    margin-top: 10px;
+    margin-bottom: 5px;
     background-color: black;
-    color: orange;
-    border: white solid;
+    text-transform: uppercase;
+    font-family: "Messina Black";
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
+
 .item-sede{
     background-color: orange;
     color: white;
@@ -86,4 +113,9 @@ nav {
 }
 .text-home p {
     font-size: 20px;
+}
+
+.fondologo{
+    opacity:0.1;
+    margin-left: -1rem;
 }
