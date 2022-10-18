@@ -14,6 +14,8 @@ body{
     background-color: #FA8403;
     color: white;
     font-family: "Big Noodle Titling";
+    padding: 0;
+    margin: 0;
 }
 body a {
     text-decoration: none;
@@ -34,7 +36,9 @@ nav {
 
 .btn-clasefree {
     display: flex;
-    background-color: orange;
+    background: #000000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000006E;
+    opacity: 1;
     color: white;
     left: 0px;
     width: 100%;
@@ -42,21 +46,19 @@ nav {
     margin: 0px;
     text-align: center;
     justify-content: center;
-    font-size: 25px;
     padding: 10px;
     font-weight: 500;
     text-decoration: none;
 }
 
 .welcome-box{
-    background-color: #FA8403;
+    position: absolute;
+    /* background-color: #FA8403; */
     display: flex;
-    margin: 0px;
     text-align: center;
     justify-content: center;
-    font-size: 25px;
-    padding: 20px;
-    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .list-group li a.active {
     color: orange !important;
@@ -116,6 +118,19 @@ nav {
 }
 
 .fondologo{
+    background-image: url("../image/logohammerblanco.png");
     opacity:0.1;
     margin-left: -1rem;
+    height: 5rem; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+
+
+.guion1{
+    float: right;
+}
+.guion2{
+    margin-top: 20%;
 }
