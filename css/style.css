@@ -19,7 +19,7 @@ body{
 }
 body a {
     text-decoration: none;
-    color: orange;
+    color: #FA8403;
 }
 .caja {
     background: #000000 0% 0% no-repeat padding-box !important;
@@ -30,7 +30,7 @@ body a {
 }
 /* 
 nav {
-    border-bottom:3px solid orange;
+    border-bottom:3px solid #FA8403;
     padding: 0px !important;
 } */
 
@@ -61,14 +61,14 @@ nav {
     padding-right: 20px;
 }
 .list-group li a.active {
-    color: orange !important;
+    color: #FA8403 !important;
 }
 .list-group li a:hover {
-    color: orange !important;
+    color: #FA8403 !important;
 }
 
 .box-title {
-    color: orange;
+    color: #FA8403;
     font-size: 30px;
 }
 .box-text {
@@ -92,7 +92,7 @@ nav {
 }
 
 .item-sede{
-    background-color: orange;
+    background-color: #FA8403;
     color: white;
     border: black solid;
 }
@@ -102,7 +102,7 @@ nav {
     margin-bottom: 4%;
 }
 .img-home{
-    border:solid orange;
+    border:solid #FA8403;
     border-radius: 10px;
 }
 
@@ -112,6 +112,10 @@ nav {
     margin-bottom: 30px;
 }
 .text-home p {
+    font-family: "Messina Regular";
+    font-size: 0.8rem;
+}
+ p {
     font-family: "Messina Regular";
     font-size: 0.8rem;
 }
@@ -133,19 +137,125 @@ nav {
 .guion2{
     margin-top: 20%;
 }
+.text-effect{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
 
-.slider-vos{
+
+.back-slider-vos{
+    position: absolute;
     background-color: white;
     width: 100%;
     height: 25rem;
     transform: skew(0,-8deg);
 }
-.logovertical{
-    /* background-image: url("../image/logohammerorange.png"); */
+.logovertical1{
     opacity:0.1;
-    /* height: 5rem;  */
-    margin-left: -22rem;
+    margin-left: -20rem;
     background-repeat: no-repeat; 
     background-size: cover; 
     transform: rotate(-90deg);
 }
+.logovertical2{
+    opacity:0.1;
+    margin-left: -20rem;
+    margin-top: 8rem;;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    transform: rotate(-90deg);
+}
+.slider-vos{
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 13px;
+    height: 400px;
+}
+.effect-vos {
+    color: transparent; 
+    -webkit-text-stroke:0.3px white;
+}
+.text-effect p {
+    font-family: "Messina Regular";
+    font-size: 0.8rem;
+}
+hr{
+    width: 40% !important;
+    opacity: 1 !important;
+}
+.back-tus-actividades{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:38rem;
+}
+.effect-actividades{
+    color: transparent; 
+    -webkit-text-stroke:0.3px #FA8403;
+}
+.img_slider_actividad{
+    /* width:90%; */
+    position: relative;
+    height: 33rem;
+}
+.act-musculacion{
+    background-image: url("../image/act-musculacion.png");
+    /* background-repeat: no-repeat;  */
+    background-size: contain; 
+}
+
+.act-kids{
+    background-image: url("../image/actividadeskids.jpg");
+    /* background-repeat: no-repeat;  */
+    background-size: cover; 
+}
+
+.act-cardio{
+    background-image: url("../image/cardio1.png");
+    /* background-repeat: no-repeat;  */
+    background-size: contain; 
+}
+
+.card-actividades{
+    background-color: #FA8403;
+    position: relative;
+    bottom: -19rem;
+    transform: skew(0,-6deg);
+    height: 16rem;
+}
+.style-actividades{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+.text-slider-actividad{
+    position: absolute;
+    bottom: 1rem;
+}
+.card-titulo, .t-cardio, .t-musculacion, .t-kids{
+    position: absolute;
+    font-size: 5.5rem;
+    opacity: 0.1;
+}
+.card-subtitulo {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+.card-parrafo{
+    margin: 0.95rem;
+    font-size: 0.65rem;
+    text-align: justify;
+}
+
+.t-cardio{
+    margin-top: -3.5rem;
+}
+.t-musculacion{
+    margin-top: -4.5rem;
+}
+.t-kids{
+    margin-top: -4.5rem;
+}
+/* .sub-cardio{
+
+} */
