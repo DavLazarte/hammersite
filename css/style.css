@@ -19,7 +19,7 @@ body{
 }
 body a {
     text-decoration: none;
-    color: #FA8403;
+    color: white;
 }
 .caja {
     background: #000000 0% 0% no-repeat padding-box !important;
@@ -216,12 +216,16 @@ hr{
     background-size: contain; 
 }
 
-.card-actividades{
+.card-actividades, .card-actividades-white{
     background-color: #FA8403;
     position: relative;
     bottom: -19rem;
     transform: skew(0,-6deg);
     height: 16rem;
+}
+
+.card-actividades-white{
+    background-color: white;
 }
 .style-actividades{
     margin-left: 1rem;
@@ -237,11 +241,11 @@ hr{
     font-size: 5.5rem;
     opacity: 0.1;
 }
-.card-subtitulo {
+.card-subtitulo, .card-subtitulo-orange {
     margin-left: 1rem;
     font-size: 2.5rem;
 }
-.card-parrafo{
+.card-parrafo, .card-parrafo-orange{
     margin: 0.95rem;
     font-size: 0.65rem;
     text-align: justify;
@@ -249,6 +253,7 @@ hr{
 
 .t-cardio{
     margin-top: -3.5rem;
+    color: #FA8403;
 }
 .t-musculacion{
     margin-top: -4.5rem;
@@ -256,6 +261,6 @@ hr{
 .t-kids{
     margin-top: -4.5rem;
 }
-/* .sub-cardio{
-
-} */
+ .card-subtitulo-orange, .card-parrafo-orange {
+     color: #FA8403;
+ }
