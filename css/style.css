@@ -21,6 +21,9 @@ body a {
     text-decoration: none;
     color: white;
 }
+body ul li {
+    list-style: none;
+}
 .caja {
     background: #000000 0% 0% no-repeat padding-box !important;
     box-shadow: 0px 3px 6px #0000006E;
@@ -261,6 +264,18 @@ hr{
 .t-kids{
     margin-top: -4.5rem;
 }
- .card-subtitulo-orange, .card-parrafo-orange {
-     color: #FA8403;
- }
+.card-subtitulo-orange, .card-parrafo-orange {
+    color: #FA8403;
+}
+
+.objetivos{
+    background-color:black; 
+    text-align: center;
+    padding: 1rem;
+}
+.footer-gym{
+    position: absolute;
+    width: 100%;
+    background-color: black; 
+    /* height: 5rem; */
+}
