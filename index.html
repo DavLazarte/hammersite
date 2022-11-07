@@ -199,12 +199,12 @@
             </div>
           </div>
           <div class="carousel-item act-cardio img_slider_actividad">
-            <div class="card-actividades-white">
+            <div class="card-actividades">
             </div>
             <div class="text-slider-actividad">
               <h1 class="card-titulo t-cardio">Cardio</h1>
-              <h2 class="card-subtitulo-orange">Cardio</h2>
-                <p class="card-parrafo-orange">¿Pensas que hacer cardio es aburrido? 
+              <h2 class="card-subtitulo">Cardio</h2>
+                <p class="card-parrafo">¿Pensas que hacer cardio es aburrido? 
                   Con nuestro plan de musculacion tambien tendrás a disposición todos nuestros equipos de cardio, cintas, bicis, elípticos, remos, airebikes entre otros, para que elijas el más divertido y apto para vos, con los que podras quemar todas las calorías que te propongas, o bien para calentar un ratito antes de comenzar tu rutina 💪🏻</p>
             </div>
           </div>
@@ -223,19 +223,28 @@
 
     <!-- end tus actividades -->
     <!-- footer -->
-    <div class="footer-gym pb-4">
+    <div class="footer-gym">
         <div class="container">
-          <div class="" style="float: left; font-size: 0.9rem;">
-            <ul>
-              <li> <a href="">HOME</a> </li>
-              <li> <a href="">NUESTRAS SEDES</a> </li>
-              <li> <a href="">CONTACTOS</a> </li>
-            </ul>
+          <div class="d-flex justify-content-center pt-3">
+            <a href="https://www.instagram.com/hammer.ok/" target="_blank">
+              <img src="./image/instagram.png" style="max-width: 2rem; max-height: 2rem;" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/hammer.okey/" target="_blank">
+              <img src="./image/facebook.png" style="max-width: 2rem; max-height: 2rem;" alt="facebook">
+            </a>
+            <a href="https://walink.co/f337a2" target="_blank">
+              <img src="./image/whatsapp.png" style="max-width: 2rem; max-height: 2rem;" alt="whatsapp">
+            </a>
           </div>
-          <div class="pt-4">
-            <img src="image/logohammerblanco.png" style="max-width:6rem; float: right">
+          <hr style="width: 100% !important;">
+          <div class="text-center">
+            <a href="./beneficios.html">
+              <p>Beneficios</p>
+            </a>
+            <a href="./pautas.html">
+              <p>Pautas de convivencia Hammer</p>
+            </a>
           </div>
-          
         </div>
     </div>  
     <!-- end footer -->
@@ -246,7 +255,6 @@
 
     <!--section boton fijo mi clase-->
     <div type="button" class="btn-clasefree fixed-bottom" data-bs-toggle="modal" data-bs-target="#objetivosModal">
-      <!-- <a href="#" class="btn-clasefree">¡QUIERO PROBAR UNA CLASE!</a> -->
       ¡QUIERO PROBAR UNA CLASE!
     </div>
     <!--end section boton fijo mi clase-->
@@ -260,29 +268,30 @@
  <div class="modal fade" id="objetivosModal" tabindex="-1" aria-labelledby="objetivosModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">      
-      <div class="objetivos">
         <div class="modal-body">
-          <div style="background-color:#FA8403; height: 30rem; width: 100%; align-items: center;">
-            <div class="container">
-              <input class="form-control form-control-sm mb-1" type="text" placeholder="Nombre" aria-label="Name">
-            <input class="form-control form-control-sm mb-1" type="text" placeholder="Edad" aria-label="Edad">
-            <div>
-              <label for="ckeckactividades">Quiero probar la clase de:</label>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="funcional" checked>
-                <label class="form-check-label" for="funcional">
-                  Funcional
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Musculacion">
-                <label class="form-check-label" for="musculacion">
-                  Musculación
-                </label>
-              </div>
+          <div class="container" style="background-color: #FA8403;">
+          <div class="modal-style"></div>      
+          <form style="position: relative;">
+            <div class="mb-3 pt-3">
+              <input type="text" class="form-control" id="name" placeholder="Nombres">
             </div>
-          
-            <div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="lastname" placeholder="Apellidos">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="DNI" placeholder="D.N.I">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="celular" placeholder="Numero de Celular">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>¿En qué Hammer querés entrenar?</option>
+                <option value="monteros">Monteros</option>
+                <option value="concepcion">Concepción</option>
+              </select>
+            </div>
+            <div class="mb-3">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Seleccioná tu objetivo</option>
                 <option value="1">Quiero ganar masa muscular</option>
@@ -296,17 +305,11 @@
                 <option value="9">Quiero una clase para mi niño</option>
               </select>
             </div>
-            </div>
-            <div style="background-color: white; color: #FA8403; font-size: 30px; width: 80%;" >Programar</div>
-          </div>
-        <!-- <div class="text-home">
-          <h1 class="display-6">¡Ayudamos a cumplir tus objetivos!</h1>
-          <p>Elegí tu objetivo y dejalo en nuestas manos, para que juntos trabajemos en el</p>
-        </div> -->
-      
+          </form>        
+          <div class="btn-programar">Programar</div>
+        </div>
         </div>
       </div>
-    </div>
   </div>
 </div>
   

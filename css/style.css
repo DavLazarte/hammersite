@@ -31,32 +31,20 @@ body ul li {
     border-radius: 30px !important;
     max-width: 80%;
 }
-/* 
-nav {
-    border-bottom:3px solid #FA8403;
-    padding: 0px !important;
-} */
+
 
 .btn-clasefree {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    height: 3rem;
     display: flex;
     background: #000000 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #0000006E;
-    opacity: 1;
-    color: white;
-    left: 0px;
-    width: 100%;
-    border-radius: 0px;
-    margin: 0px;
-    text-align: center;
     justify-content: center;
-    padding: 10px;
-    font-weight: 500;
     text-decoration: none;
 }
 
 .welcome-box{
     position: absolute;
-    /* background-color: #FA8403; */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -76,7 +64,6 @@ nav {
 }
 .box-text {
     font-family: "Messina Regular";
-    /* font: normal normal normal 10px/12px; */
     font-size: 12px;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -118,9 +105,14 @@ nav {
     font-family: "Messina Regular";
     font-size: 0.8rem;
 }
- p {
+p {
     font-family: "Messina Regular";
     font-size: 0.8rem;
+    
+}
+
+a p {
+    margin-bottom: 0px !important;
 }
 
 .fondologo{
@@ -197,25 +189,21 @@ hr{
     -webkit-text-stroke:0.3px #FA8403;
 }
 .img_slider_actividad{
-    /* width:90%; */
     position: relative;
     height: 33rem;
 }
 .act-musculacion{
     background-image: url("../image/act-musculacion.png");
-    /* background-repeat: no-repeat;  */
     background-size: contain; 
 }
 
 .act-kids{
     background-image: url("../image/actividadeskids.jpg");
-    /* background-repeat: no-repeat;  */
     background-size: cover; 
 }
 
 .act-cardio{
     background-image: url("../image/cardio1.png");
-    /* background-repeat: no-repeat;  */
     background-size: contain; 
 }
 
@@ -244,19 +232,18 @@ hr{
     font-size: 5.5rem;
     opacity: 0.1;
 }
-.card-subtitulo, .card-subtitulo-orange {
+.card-subtitulo {
     margin-left: 1rem;
     font-size: 2.5rem;
 }
-.card-parrafo, .card-parrafo-orange{
+.card-parrafo{
     margin: 0.95rem;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     text-align: justify;
 }
 
 .t-cardio{
-    margin-top: -3.5rem;
-    color: #FA8403;
+    margin-top: -1.5rem;
 }
 .t-musculacion{
     margin-top: -4.5rem;
@@ -264,18 +251,28 @@ hr{
 .t-kids{
     margin-top: -4.5rem;
 }
-.card-subtitulo-orange, .card-parrafo-orange {
-    color: #FA8403;
-}
-
-.objetivos{
-    background-color:white; 
-    text-align: center;
-    padding: 1rem;
-}
 .footer-gym{
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: black; 
-    /* height: 5rem; */
+    height: 11rem;
+}
+
+.modal-style{
+    position: absolute;
+    background-image: url("../image/backmodal.png");
+    opacity:0.2;
+    background-size: cover; 
+    height: 25rem; 
+    width: 90%; 
+}
+.btn-programar {
+    position: relative;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    color: #FA8403;
+    font-size: 2rem;
 }
