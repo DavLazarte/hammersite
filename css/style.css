@@ -251,11 +251,16 @@ hr{
 .t-kids{
     margin-top: -4.5rem;
 }
-.footer-gym{
-    position: relative;
+.footer-gym, .footer-gym-contact{
     width: 100%;
     background-color: black; 
-    height: 11rem;
+}
+.footer-gym {
+    position: relative;
+    height: 12rem;
+}
+.footer-gym-contact{
+    height: 10rem;
 }
 
 .modal-style{
@@ -266,16 +271,35 @@ hr{
     height: 25rem; 
     width: 90%; 
 }
-.btn-programar {
+.btn-programar, .btn-contacto {
     position: relative;
     text-align: center;
-    border-radius: 10px 10px 0px 0px;
     margin: auto;
-    width: 50%;
     background-color: white;
     color: #FA8403;
     font-size: 2rem;
 }
+.btn-programar{
+    border-radius: 10px 10px 0px 0px;
+    width: 50%;
+
+}
+.btn-contacto{
+    border-radius: 10px 10px 10px 10px;
+    width: 40%;
+
+}
 .site-beneficios{
     background-color: #FA8403;
+}
+
+.beneficios-text {
+    font-family: "Messina Regular" ;
+}
+.beneficios-text p {
+    text-align: justify;
+}
+
+.beneficios-text h6, h5 {
+    font-weight: bold;
 }
