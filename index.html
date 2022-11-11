@@ -98,7 +98,7 @@
                 <li class="list-group-item item-sede">Concepción</li>
               </ul>
             </div>
-            <li class="list-group-item item-box">Quiero trabajar con ustedes</li>
+            <li type="button" class="list-group-item item-box" data-bs-toggle="modal" data-bs-target="#trabajarModal">Quiero trabajar con ustedes</li>
           </ul>
         </div>
       </div>
@@ -318,5 +318,54 @@
       </div>
   </div>
 </div>
-  
 <!--end section objetivos -->
+<!-- section modal quero trabajar -->
+<div class="modal fade" id="trabajarModal" tabindex="-1" aria-labelledby="trabajarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="background-color: #FA8403;">      
+        <div class="modal-body">
+          <div class="container" >
+            <p style="color: white;">¡Quiero formar parte del equipo Hammer!</p>
+          <form style="position: relative;">
+            <div class="mb-3 pt-3">
+              <input type="text" class="form-control form-control-sm" id="name" placeholder="Nombres y Apellidos">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <input type="number" class="form-control form-control-sm" id="celular" placeholder="Numero de Celular">
+            </div>
+            <div class="mb-3">
+              <input type="number" class="form-control form-control-sm" id="Edad" placeholder="Edad">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Quiero trabajar de:</option>
+                <option value="recepcionista">Recepcionista</option>
+                <option value="vendedor">Vendedor</option>
+                <option value="instructormusculacion">Instructor de musculación</option>
+                <option value="coachclasesgrupales">Coach de clases grupales</option>
+                <option value="limpieza">Limpieza</option>
+                <option value="mantenimiento">Mantenimiento</option>
+                <option value="marketing"> Marketing</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Sede</option>
+                <option value="monteros">Monteros</option>
+                <option value="concepcion">Concepción</option>
+              </select>
+            </div>
+            <textarea name="vos" id="vos" cols="57" rows="5" placeholder="Contanos un poco sobre vos"></textarea>
+          </form>
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-light">Enviar</button>
+          </div>    
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--end section quiero trabajar -->
