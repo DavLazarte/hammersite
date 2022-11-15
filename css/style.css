@@ -303,3 +303,25 @@ hr{
 .beneficios-text h6, h5 {
     font-weight: bold;
 }
+.cartel-sede{
+    background-color: white; 
+    height: 6rem;  
+}
+.cartel-sede-text-back{
+    font-size: 6rem; 
+    opacity: 0.5; 
+    margin-top: -1rem;
+}
+.cartel-sede-title {
+    color: #FA8403; 
+    position: absolute;
+}
+
+.cartel-sede-title h3{
+    font-size: 2rem;
+    line-height: 30px; 
+    margin-left: 2rem; 
+}
+.cartel-sede-title h3 span {
+    font-size: 3rem;
+}
