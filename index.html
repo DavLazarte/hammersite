@@ -14,10 +14,10 @@
     <!-- owlcarrousel -->
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark" >
+    <nav class="navbar fixed-top" style="background-color: white;" >
         <div class="container-fluid" >
-          <a class="navbar-brand" href="#">
-            <img src="image/logohammerblanco.png" style="max-width:150px;">
+          <a class="navbar-brand" href="./index.html">
+            <img src="image/logohammerorange.png" style="max-width:150px;">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,12 +27,12 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="./monteros.html">SEDE MONTEROS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./concepcion.html">SEDE CONCEPCIÓN</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">CONTACTO</a>
               </li>
@@ -85,25 +85,26 @@
     </div>
     <!-- logotranparente -->
     <!--welcome-box section-->
-    <div class="welcome-box mt-4">
-      <div class="card  caja">
-        <div class="card-body">
-          <img src="./image/logohammerorange.png" alt="" style="max-width:150px;">
-          <p class="card-text box-text pt-2">Bienvenidos a nuestro sitio oficial, todo lo que necesitas saber para entrenar con nosotros en un solo lugar.</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item  item-box"><a href="#home" >Vos, en el centro de la escena</a> </li>
-            <li class="list-group-item  item-box"><a href="#tusactividades" >Tus Actividades</a> </li>
-            <li class="list-group-item item-box" data-bs-toggle="collapse" href="#collapseExample">Nuestras Sedes</li>
-            <div class="collapse" id="collapseExample">
-              <ul class="list-group list-group-flush" id="sedes">
-                <a href="./monteros.html"><li class="list-group-item  item-sede">Monteros</li></a>
-                <a href="./concepcion.html"><li class="list-group-item item-sede">Concepción</li></a>
+      <div class="container welcome-box">
+          <div class="card  caja">
+            <div class="card-body">
+              <img src="./image/logohammerorange.png" alt="" style="max-width:150px;">
+              <p class="card-text box-text pt-2">Bienvenidos a nuestro sitio oficial, todo lo que necesitas saber para entrenar con nosotros en un solo lugar.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item  item-box"><a href="#home" >Vos, en el centro de la escena</a> </li>
+                <li class="list-group-item  item-box"><a href="#tusactividades" >Tus Actividades</a> </li>
+                <li class="list-group-item item-box" data-bs-toggle="collapse" href="#collapseExample">Nuestras Sedes</li>
+                <div class="collapse" id="collapseExample">
+                  <ul class="list-group list-group-flush" id="sedes">
+                    <a href="./monteros.html"><li class="list-group-item  item-sede">Monteros</li></a>
+                    <a href="./concepcion.html"><li class="list-group-item item-sede">Concepción</li></a>
+                  </ul>
+                </div>
+                <li type="button" class="list-group-item item-box" data-bs-toggle="modal" data-bs-target="#trabajarModal">Quiero trabajar con ustedes</li>
               </ul>
             </div>
-            <li type="button" class="list-group-item item-box" data-bs-toggle="modal" data-bs-target="#trabajarModal">Quiero trabajar con ustedes</li>
-          </ul>
         </div>
-      </div>
+        </div>
     </div>
     
     <!--end welcome-box section-->
@@ -121,8 +122,7 @@
     <div class="container" id="home">
       <div class="mt-1 pb-1">
         <h3 class="text-effect">Vos, en el centro de la escena <span class="effect-vos">Vos, en el centro de la escena</span></h3>
-        <p>En Hammer encontraras multiples actividades pensadas  y programadas para que logres tus objetivos
-          ya sean de manera grupal o individual. Siempre orientados por un profe o instructor.
+        <p>En hammer encontrarás un montón de actividades  grupales e individuales pensadas y programadas para.vos. ¡Contanos tu objetivo y te asesoramos sin preocuparte por tu nivel o experiencia, nuestro profe o coach se encargará de todo!
         </p>
       </div>
      
@@ -158,7 +158,7 @@
       <div class="row">
         <div class="d-flex justify-content-cente">
             <hr>
-            <p>@hammer.ar</p>
+            <a href="https://walink.co/f337a2" style="color: white !important;">Whatsapp</a>
             <hr>
         </div>
       </div>
@@ -269,6 +269,9 @@
  <div class="modal fade" id="objetivosModal" tabindex="-1" aria-labelledby="objetivosModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">      
+    <div class="modal-header" style="border-bottom: none !important;">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div> 
         <div class="modal-body">
           <div class="container" style="background-color: #FA8403;">
           <div class="modal-style"></div>      
@@ -317,10 +320,14 @@
 <!-- section modal quero trabajar -->
 <div class="modal fade" id="trabajarModal" tabindex="-1" aria-labelledby="trabajarModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content" style="background-color: #FA8403;">      
+    <div class="modal-content">  
+      <div class="modal-header" style="border-bottom: none !important;">
+        <p style="color: #FA8403;">¡Quiero formar parte del equipo Hammer!</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> 
         <div class="modal-body">
-          <div class="container" >
-            <p style="color: white;">¡Quiero formar parte del equipo Hammer!</p>
+          <div class="container" style="background-color: #FA8403;" >
+            <div class="modal-style"></div>  
           <form style="position: relative;">
             <div class="mb-3 pt-3">
               <input type="text" class="form-control form-control-sm" id="name" placeholder="Nombres y Apellidos">
@@ -356,7 +363,7 @@
             <textarea name="vos" id="vos" cols="57" rows="5" placeholder="Contanos un poco sobre vos"></textarea>
           </form>
           <div class="d-flex justify-content-end">
-            <button type="button" class="btn btn-light">Enviar</button>
+            <div class="btn-programar">Enviar</div>
           </div>    
         </div>
         </div>

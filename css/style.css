@@ -19,26 +19,27 @@ body{
 }
 body a {
     text-decoration: none;
-    color: white;
+    color: #FA8403;
 }
 body ul li {
     list-style: none;
 }
 .caja {
-    background: #000000 0% 0% no-repeat padding-box !important;
+    color: #FA8403;
+    /* background: #ffffff 0% 0% no-repeat padding-box !important; */
     box-shadow: 0px 3px 6px #0000006E;
-    opacity: 1;
     border-radius: 30px !important;
     max-width: 80%;
 }
 
 
 .btn-clasefree {
-    padding-top: 0.5rem;
+    color: #FA8403;
+    padding-top: 1rem;
     font-size: 1.5rem;
-    height: 3rem;
+    height: 4rem;
     display: flex;
-    background: #000000 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     justify-content: center;
     text-decoration: none;
 }
@@ -48,8 +49,8 @@ body ul li {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 .list-group li a.active {
     color: #FA8403 !important;
@@ -66,25 +67,26 @@ body ul li {
     font-family: "Messina Regular";
     font-size: 12px;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: black;;
     opacity: 1;
 }
 .item-box{
     margin-top: 10px;
     margin-bottom: 5px;
-    background-color: black;
+    border: none !important;
+    /* background-color: black; */
     text-transform: uppercase;
     font-family: "Messina Black";
     font-size: 12px;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #FA8403;
     opacity: 1;
 }
 
 .item-sede{
     background-color: #FA8403;
     color: white;
-    border: black solid;
+    /* border: black solid; */
 }
 .home {
     margin-left: 2%;
@@ -256,6 +258,7 @@ hr{
     background-color: black; 
 }
 .footer-gym {
+    margin-bottom: 1rem;
     position: relative;
     height: 12rem;
 }
@@ -324,4 +327,10 @@ hr{
 }
 .cartel-sede-title h3 span {
     font-size: 3rem;
+}
+.text-valores {
+    color: black; font-family: Messina Regular; font-size: 0.9rem;
+}
+.text-valores span {
+    font-size: 2rem; color:#FA8403; font-family: Big Noodle Titling;
 }
