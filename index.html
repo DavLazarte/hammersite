@@ -7,11 +7,12 @@
     <meta name="author" content="David Lazarte">
     <title>Hammer Fitness and Gym</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- owlcarrousel -->
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
     <!-- owlcarrousel -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
 <body>
     <nav class="navbar fixed-top" style="background-color: white;" >
@@ -25,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="./monteros.html">SEDE MONTEROS</a>
@@ -255,17 +256,13 @@
         </div>
     </div>  
     <!-- end footer -->
-   
-   
     <!--end section home-->
-   
-
     <!--section boton fijo mi clase-->
     <div type="button" class="btn-clasefree fixed-bottom" data-bs-toggle="modal" data-bs-target="#objetivosModal">
       ¡QUIERO PROBAR UNA CLASE!
     </div>
-    <!--end section boton fijo mi clase-->
-    <!-- section modal objetivos -->
+    <!--end section boton fijo mi clase-->  
+  <!-- section modal objetivos -->
  <div class="modal fade" id="objetivosModal" tabindex="-1" aria-labelledby="objetivosModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">      
@@ -371,10 +368,25 @@
   </div>
 </div>
 <!--end section quiero trabajar -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/hammer.js"></script>
+    <script>
+      $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items:2,
+                loop:false,
+                autoWidth:true,
+                margin:15,
+                // responsive:{
+                //     600:{
+                //         items:4
+                //     }
+                // }
+            });
+      })
+    </script>
 </body>
 </html>
  
